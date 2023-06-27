@@ -1,0 +1,47 @@
+html {
+    --dark: #222233;
+    --light: #DDDDEE;
+    --grey: #808091;
+}
+._fromLeft {
+    transform: translateX(-400%);
+    animation: fromLeft 1s forwards ease-out;
+}
+._toLeft {
+    animation: toLeft 1s forwards ease-out;
+}
+._fromRight {
+    transform: translateX(400%);
+    animation: fromRight 1s forwards ease-out;
+}
+._toRight {
+    animation: toRight 1s forwards ease-out;
+}
+._fadeIn {
+    animation: fadeIn 1s forwards ease-in;
+}
+.grey-txt {
+    background-color: var(--grey);
+}
+@keyframes fromLeft {
+    0% { transform: translateX(-400%); }
+    100% { transform: translateX(0); }
+}
+@keyframes toLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-400%); }
+}
+@keyframes fromRight {
+    0% { transform: translateX(400%); }
+    100% { transform: translateX(0); }
+}
+@keyframes toRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(400%); }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
